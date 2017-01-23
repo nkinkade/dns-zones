@@ -3,7 +3,7 @@ $ORIGIN measurementlab.org.
 $TTL 600
 
 @	IN	SOA	ns.chambana.net.  support.measurementlab.net.	(
-	2016080300 ;Serial Number
+	2017012302 ;Serial Number
 	1h  ;refresh
 	900 ;retry
 	1w  ;expire
