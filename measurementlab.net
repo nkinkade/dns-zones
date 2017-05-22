@@ -99,7 +99,7 @@ ticket       IN    MX    10    ks.measurementlab.net.
 
 ; allocated through GCP load balancer
 status-mlab-staging IN    A    35.185.76.159
-
+status-mlab-oti     IN    A    35.184.81.106
 
 ; for compatibility with measurementlab.net web host
 localhost    IN    A    127.0.0.1
