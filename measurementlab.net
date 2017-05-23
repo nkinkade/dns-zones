@@ -98,6 +98,7 @@ ks._domainkey.ks    IN    TXT    "v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4
 ticket       IN    MX    10    ks.measurementlab.net.
 
 ; allocated through GCP load balancer
+status-mlab-sandbox IN    A    104.196.164.214
 status-mlab-staging IN    A    35.185.76.159
 status-mlab-oti     IN    A    35.184.81.106
 
