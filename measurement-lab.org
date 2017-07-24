@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2017072000      ; Serial
+        2017072400      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire
@@ -439,6 +439,7 @@ mlab3d.hnd01                      IN  A   	203.178.130.198
 mlab1d.iad01                      IN  A   	216.156.197.132
 mlab2d.iad01                      IN  A   	216.156.197.133
 mlab3d.iad01                      IN  A   	216.156.197.134
+mlab4d.iad01                      IN  A   	216.156.197.135
 mlab1d.iad02                      IN  A   	38.90.140.132
 mlab2d.iad02                      IN  A   	38.90.140.133
 mlab3d.iad02                      IN  A   	38.90.140.134
@@ -912,6 +913,7 @@ mlab3.hnd01                       IN  A   	203.178.130.227
 mlab1.iad01                       IN  A   	216.156.197.137
 mlab2.iad01                       IN  A   	216.156.197.150
 mlab3.iad01                       IN  A   	216.156.197.163
+mlab4.iad01                       IN  A   	216.156.197.176
 mlab1.iad02                       IN  A   	38.90.140.137
 mlab2.iad02                       IN  A   	38.90.140.150
 mlab3.iad02                       IN  A   	38.90.140.163
@@ -1385,6 +1387,7 @@ mlab3v4.hnd01                     IN  A   	203.178.130.227
 mlab1v4.iad01                     IN  A   	216.156.197.137
 mlab2v4.iad01                     IN  A   	216.156.197.150
 mlab3v4.iad01                     IN  A   	216.156.197.163
+mlab4v4.iad01                     IN  A   	216.156.197.176
 mlab1v4.iad02                     IN  A   	38.90.140.137
 mlab2v4.iad02                     IN  A   	38.90.140.150
 mlab3v4.iad02                     IN  A   	38.90.140.163
@@ -1852,6 +1855,7 @@ mlab3.hnd01                       IN  AAAA	2001:200:0:b801::227
 mlab1.iad01                       IN  AAAA	2610:18:111:8001::137
 mlab2.iad01                       IN  AAAA	2610:18:111:8001::150
 mlab3.iad01                       IN  AAAA	2610:18:111:8001::163
+mlab4.iad01                       IN  AAAA	2610:18:111:8001::176
 mlab1.iad02                       IN  AAAA	2001:550:200:7::137
 mlab2.iad02                       IN  AAAA	2001:550:200:7::150
 mlab3.iad02                       IN  AAAA	2001:550:200:7::163
@@ -2307,6 +2311,7 @@ mlab3v6.hnd01                     IN  AAAA	2001:200:0:b801::227
 mlab1v6.iad01                     IN  AAAA	2610:18:111:8001::137
 mlab2v6.iad01                     IN  AAAA	2610:18:111:8001::150
 mlab3v6.iad01                     IN  AAAA	2610:18:111:8001::163
+mlab4v6.iad01                     IN  AAAA	2610:18:111:8001::176
 mlab1v6.iad02                     IN  AAAA	2001:550:200:7::137
 mlab2v6.iad02                     IN  AAAA	2001:550:200:7::150
 mlab3v6.iad02                     IN  AAAA	2001:550:200:7::163
@@ -2911,6 +2916,8 @@ ndt.iupui.iad01                   IN  A   	216.156.197.152
 ndt.iupui.mlab2.iad01             IN  A   	216.156.197.152
 ndt.iupui.iad01                   IN  A   	216.156.197.165
 ndt.iupui.mlab3.iad01             IN  A   	216.156.197.165
+ndt.iupui.iad01                   IN  A   	216.156.197.178
+ndt.iupui.mlab4.iad01             IN  A   	216.156.197.178
 ndt.iupui.iad02                   IN  A   	38.90.140.139
 ndt.iupui.mlab1.iad02             IN  A   	38.90.140.139
 ndt.iupui.iad02                   IN  A   	38.90.140.152
@@ -3855,6 +3862,8 @@ ndt.iupuiv4.iad01                 IN  A   	216.156.197.152
 ndt.iupui.mlab2v4.iad01           IN  A   	216.156.197.152
 ndt.iupuiv4.iad01                 IN  A   	216.156.197.165
 ndt.iupui.mlab3v4.iad01           IN  A   	216.156.197.165
+ndt.iupuiv4.iad01                 IN  A   	216.156.197.178
+ndt.iupui.mlab4v4.iad01           IN  A   	216.156.197.178
 ndt.iupuiv4.iad02                 IN  A   	38.90.140.139
 ndt.iupui.mlab1v4.iad02           IN  A   	38.90.140.139
 ndt.iupuiv4.iad02                 IN  A   	38.90.140.152
@@ -4740,6 +4749,7 @@ ndt-iupui-mlab3-hnd01             IN  A   	203.178.130.229
 ndt-iupui-mlab1-iad01             IN  A   	216.156.197.139
 ndt-iupui-mlab2-iad01             IN  A   	216.156.197.152
 ndt-iupui-mlab3-iad01             IN  A   	216.156.197.165
+ndt-iupui-mlab4-iad01             IN  A   	216.156.197.178
 ndt-iupui-mlab1-iad02             IN  A   	38.90.140.139
 ndt-iupui-mlab2-iad02             IN  A   	38.90.140.152
 ndt-iupui-mlab3-iad02             IN  A   	38.90.140.165
@@ -5213,6 +5223,7 @@ ndt-iupui-mlab3v4-hnd01           IN  A   	203.178.130.229
 ndt-iupui-mlab1v4-iad01           IN  A   	216.156.197.139
 ndt-iupui-mlab2v4-iad01           IN  A   	216.156.197.152
 ndt-iupui-mlab3v4-iad01           IN  A   	216.156.197.165
+ndt-iupui-mlab4v4-iad01           IN  A   	216.156.197.178
 ndt-iupui-mlab1v4-iad02           IN  A   	38.90.140.139
 ndt-iupui-mlab2v4-iad02           IN  A   	38.90.140.152
 ndt-iupui-mlab3v4-iad02           IN  A   	38.90.140.165
@@ -5873,6 +5884,8 @@ npad.iupui.iad01                  IN  A   	216.156.197.153
 npad.iupui.mlab2.iad01            IN  A   	216.156.197.153
 npad.iupui.iad01                  IN  A   	216.156.197.166
 npad.iupui.mlab3.iad01            IN  A   	216.156.197.166
+npad.iupui.iad01                  IN  A   	216.156.197.179
+npad.iupui.mlab4.iad01            IN  A   	216.156.197.179
 npad.iupui.iad02                  IN  A   	38.90.140.140
 npad.iupui.mlab1.iad02            IN  A   	38.90.140.140
 npad.iupui.iad02                  IN  A   	38.90.140.153
@@ -6817,6 +6830,8 @@ npad.iupuiv4.iad01                IN  A   	216.156.197.153
 npad.iupui.mlab2v4.iad01          IN  A   	216.156.197.153
 npad.iupuiv4.iad01                IN  A   	216.156.197.166
 npad.iupui.mlab3v4.iad01          IN  A   	216.156.197.166
+npad.iupuiv4.iad01                IN  A   	216.156.197.179
+npad.iupui.mlab4v4.iad01          IN  A   	216.156.197.179
 npad.iupuiv4.iad02                IN  A   	38.90.140.140
 npad.iupui.mlab1v4.iad02          IN  A   	38.90.140.140
 npad.iupuiv4.iad02                IN  A   	38.90.140.153
@@ -7749,6 +7764,8 @@ npad.iupui.iad01                  IN  AAAA	2610:18:111:8001::153
 npad.iupui.mlab2.iad01            IN  AAAA	2610:18:111:8001::153
 npad.iupui.iad01                  IN  AAAA	2610:18:111:8001::166
 npad.iupui.mlab3.iad01            IN  AAAA	2610:18:111:8001::166
+npad.iupui.iad01                  IN  AAAA	2610:18:111:8001::179
+npad.iupui.mlab4.iad01            IN  AAAA	2610:18:111:8001::179
 npad.iupui.iad02                  IN  AAAA	2001:550:200:7::140
 npad.iupui.mlab1.iad02            IN  AAAA	2001:550:200:7::140
 npad.iupui.iad02                  IN  AAAA	2001:550:200:7::153
@@ -8657,6 +8674,8 @@ npad.iupuiv6.iad01                IN  AAAA	2610:18:111:8001::153
 npad.iupui.mlab2v6.iad01          IN  AAAA	2610:18:111:8001::153
 npad.iupuiv6.iad01                IN  AAAA	2610:18:111:8001::166
 npad.iupui.mlab3v6.iad01          IN  AAAA	2610:18:111:8001::166
+npad.iupuiv6.iad01                IN  AAAA	2610:18:111:8001::179
+npad.iupui.mlab4v6.iad01          IN  AAAA	2610:18:111:8001::179
 npad.iupuiv6.iad02                IN  AAAA	2001:550:200:7::140
 npad.iupui.mlab1v6.iad02          IN  AAAA	2001:550:200:7::140
 npad.iupuiv6.iad02                IN  AAAA	2001:550:200:7::153
@@ -9577,6 +9596,8 @@ geoloc4.uw.iad01                  IN  A   	216.156.197.156
 geoloc4.uw.mlab2.iad01            IN  A   	216.156.197.156
 geoloc4.uw.iad01                  IN  A   	216.156.197.169
 geoloc4.uw.mlab3.iad01            IN  A   	216.156.197.169
+geoloc4.uw.iad01                  IN  A   	216.156.197.182
+geoloc4.uw.mlab4.iad01            IN  A   	216.156.197.182
 geoloc4.uw.iad02                  IN  A   	38.90.140.143
 geoloc4.uw.mlab1.iad02            IN  A   	38.90.140.143
 geoloc4.uw.iad02                  IN  A   	38.90.140.156
@@ -10521,6 +10542,8 @@ geoloc4.uwv4.iad01                IN  A   	216.156.197.156
 geoloc4.uw.mlab2v4.iad01          IN  A   	216.156.197.156
 geoloc4.uwv4.iad01                IN  A   	216.156.197.169
 geoloc4.uw.mlab3v4.iad01          IN  A   	216.156.197.169
+geoloc4.uwv4.iad01                IN  A   	216.156.197.182
+geoloc4.uw.mlab4v4.iad01          IN  A   	216.156.197.182
 geoloc4.uwv4.iad02                IN  A   	38.90.140.143
 geoloc4.uw.mlab1v4.iad02          IN  A   	38.90.140.143
 geoloc4.uwv4.iad02                IN  A   	38.90.140.156
@@ -11505,6 +11528,8 @@ ooni.mlab.iad01                   IN  A   	216.156.197.157
 ooni.mlab.mlab2.iad01             IN  A   	216.156.197.157
 ooni.mlab.iad01                   IN  A   	216.156.197.170
 ooni.mlab.mlab3.iad01             IN  A   	216.156.197.170
+ooni.mlab.iad01                   IN  A   	216.156.197.183
+ooni.mlab.mlab4.iad01             IN  A   	216.156.197.183
 ooni.mlab.iad02                   IN  A   	38.90.140.144
 ooni.mlab.mlab1.iad02             IN  A   	38.90.140.144
 ooni.mlab.iad02                   IN  A   	38.90.140.157
@@ -12449,6 +12474,8 @@ ooni.mlabv4.iad01                 IN  A   	216.156.197.157
 ooni.mlab.mlab2v4.iad01           IN  A   	216.156.197.157
 ooni.mlabv4.iad01                 IN  A   	216.156.197.170
 ooni.mlab.mlab3v4.iad01           IN  A   	216.156.197.170
+ooni.mlabv4.iad01                 IN  A   	216.156.197.183
+ooni.mlab.mlab4v4.iad01           IN  A   	216.156.197.183
 ooni.mlabv4.iad02                 IN  A   	38.90.140.144
 ooni.mlab.mlab1v4.iad02           IN  A   	38.90.140.144
 ooni.mlabv4.iad02                 IN  A   	38.90.140.157
@@ -13381,6 +13408,8 @@ ooni.mlab.iad01                   IN  AAAA	2610:18:111:8001::157
 ooni.mlab.mlab2.iad01             IN  AAAA	2610:18:111:8001::157
 ooni.mlab.iad01                   IN  AAAA	2610:18:111:8001::170
 ooni.mlab.mlab3.iad01             IN  AAAA	2610:18:111:8001::170
+ooni.mlab.iad01                   IN  AAAA	2610:18:111:8001::183
+ooni.mlab.mlab4.iad01             IN  AAAA	2610:18:111:8001::183
 ooni.mlab.iad02                   IN  AAAA	2001:550:200:7::144
 ooni.mlab.mlab1.iad02             IN  AAAA	2001:550:200:7::144
 ooni.mlab.iad02                   IN  AAAA	2001:550:200:7::157
@@ -14289,6 +14318,8 @@ ooni.mlabv6.iad01                 IN  AAAA	2610:18:111:8001::157
 ooni.mlab.mlab2v6.iad01           IN  AAAA	2610:18:111:8001::157
 ooni.mlabv6.iad01                 IN  AAAA	2610:18:111:8001::170
 ooni.mlab.mlab3v6.iad01           IN  AAAA	2610:18:111:8001::170
+ooni.mlabv6.iad01                 IN  AAAA	2610:18:111:8001::183
+ooni.mlab.mlab4v6.iad01           IN  AAAA	2610:18:111:8001::183
 ooni.mlabv6.iad02                 IN  AAAA	2001:550:200:7::144
 ooni.mlab.mlab1v6.iad02           IN  AAAA	2001:550:200:7::144
 ooni.mlabv6.iad02                 IN  AAAA	2001:550:200:7::157
@@ -15209,6 +15240,8 @@ ispmon.samknows.iad01             IN  A   	216.156.197.158
 ispmon.samknows.mlab2.iad01       IN  A   	216.156.197.158
 ispmon.samknows.iad01             IN  A   	216.156.197.171
 ispmon.samknows.mlab3.iad01       IN  A   	216.156.197.171
+ispmon.samknows.iad01             IN  A   	216.156.197.184
+ispmon.samknows.mlab4.iad01       IN  A   	216.156.197.184
 ispmon.samknows.iad02             IN  A   	38.90.140.145
 ispmon.samknows.mlab1.iad02       IN  A   	38.90.140.145
 ispmon.samknows.iad02             IN  A   	38.90.140.158
@@ -16153,6 +16186,8 @@ ispmon.samknowsv4.iad01           IN  A   	216.156.197.158
 ispmon.samknows.mlab2v4.iad01     IN  A   	216.156.197.158
 ispmon.samknowsv4.iad01           IN  A   	216.156.197.171
 ispmon.samknows.mlab3v4.iad01     IN  A   	216.156.197.171
+ispmon.samknowsv4.iad01           IN  A   	216.156.197.184
+ispmon.samknows.mlab4v4.iad01     IN  A   	216.156.197.184
 ispmon.samknowsv4.iad02           IN  A   	38.90.140.145
 ispmon.samknows.mlab1v4.iad02     IN  A   	38.90.140.145
 ispmon.samknowsv4.iad02           IN  A   	38.90.140.158
@@ -17085,6 +17120,8 @@ ispmon.samknows.iad01             IN  AAAA	2610:18:111:8001::158
 ispmon.samknows.mlab2.iad01       IN  AAAA	2610:18:111:8001::158
 ispmon.samknows.iad01             IN  AAAA	2610:18:111:8001::171
 ispmon.samknows.mlab3.iad01       IN  AAAA	2610:18:111:8001::171
+ispmon.samknows.iad01             IN  AAAA	2610:18:111:8001::184
+ispmon.samknows.mlab4.iad01       IN  AAAA	2610:18:111:8001::184
 ispmon.samknows.iad02             IN  AAAA	2001:550:200:7::145
 ispmon.samknows.mlab1.iad02       IN  AAAA	2001:550:200:7::145
 ispmon.samknows.iad02             IN  AAAA	2001:550:200:7::158
@@ -17993,6 +18030,8 @@ ispmon.samknowsv6.iad01           IN  AAAA	2610:18:111:8001::158
 ispmon.samknows.mlab2v6.iad01     IN  AAAA	2610:18:111:8001::158
 ispmon.samknowsv6.iad01           IN  AAAA	2610:18:111:8001::171
 ispmon.samknows.mlab3v6.iad01     IN  AAAA	2610:18:111:8001::171
+ispmon.samknowsv6.iad01           IN  AAAA	2610:18:111:8001::184
+ispmon.samknows.mlab4v6.iad01     IN  AAAA	2610:18:111:8001::184
 ispmon.samknowsv6.iad02           IN  AAAA	2001:550:200:7::145
 ispmon.samknows.mlab1v6.iad02     IN  AAAA	2001:550:200:7::145
 ispmon.samknowsv6.iad02           IN  AAAA	2001:550:200:7::158
@@ -18913,6 +18952,8 @@ bismark.gt.iad01                  IN  A   	216.156.197.159
 bismark.gt.mlab2.iad01            IN  A   	216.156.197.159
 bismark.gt.iad01                  IN  A   	216.156.197.172
 bismark.gt.mlab3.iad01            IN  A   	216.156.197.172
+bismark.gt.iad01                  IN  A   	216.156.197.185
+bismark.gt.mlab4.iad01            IN  A   	216.156.197.185
 bismark.gt.iad02                  IN  A   	38.90.140.146
 bismark.gt.mlab1.iad02            IN  A   	38.90.140.146
 bismark.gt.iad02                  IN  A   	38.90.140.159
@@ -19857,6 +19898,8 @@ bismark.gtv4.iad01                IN  A   	216.156.197.159
 bismark.gt.mlab2v4.iad01          IN  A   	216.156.197.159
 bismark.gtv4.iad01                IN  A   	216.156.197.172
 bismark.gt.mlab3v4.iad01          IN  A   	216.156.197.172
+bismark.gtv4.iad01                IN  A   	216.156.197.185
+bismark.gt.mlab4v4.iad01          IN  A   	216.156.197.185
 bismark.gtv4.iad02                IN  A   	38.90.140.146
 bismark.gt.mlab1v4.iad02          IN  A   	38.90.140.146
 bismark.gtv4.iad02                IN  A   	38.90.140.159
@@ -20825,6 +20868,8 @@ neubot.mlab.iad01                 IN  A   	216.156.197.160
 neubot.mlab.mlab2.iad01           IN  A   	216.156.197.160
 neubot.mlab.iad01                 IN  A   	216.156.197.173
 neubot.mlab.mlab3.iad01           IN  A   	216.156.197.173
+neubot.mlab.iad01                 IN  A   	216.156.197.186
+neubot.mlab.mlab4.iad01           IN  A   	216.156.197.186
 neubot.mlab.iad02                 IN  A   	38.90.140.147
 neubot.mlab.mlab1.iad02           IN  A   	38.90.140.147
 neubot.mlab.iad02                 IN  A   	38.90.140.160
@@ -21769,6 +21814,8 @@ neubot.mlabv4.iad01               IN  A   	216.156.197.160
 neubot.mlab.mlab2v4.iad01         IN  A   	216.156.197.160
 neubot.mlabv4.iad01               IN  A   	216.156.197.173
 neubot.mlab.mlab3v4.iad01         IN  A   	216.156.197.173
+neubot.mlabv4.iad01               IN  A   	216.156.197.186
+neubot.mlab.mlab4v4.iad01         IN  A   	216.156.197.186
 neubot.mlabv4.iad02               IN  A   	38.90.140.147
 neubot.mlab.mlab1v4.iad02         IN  A   	38.90.140.147
 neubot.mlabv4.iad02               IN  A   	38.90.140.160
@@ -22701,6 +22748,8 @@ neubot.mlab.iad01                 IN  AAAA	2610:18:111:8001::160
 neubot.mlab.mlab2.iad01           IN  AAAA	2610:18:111:8001::160
 neubot.mlab.iad01                 IN  AAAA	2610:18:111:8001::173
 neubot.mlab.mlab3.iad01           IN  AAAA	2610:18:111:8001::173
+neubot.mlab.iad01                 IN  AAAA	2610:18:111:8001::186
+neubot.mlab.mlab4.iad01           IN  AAAA	2610:18:111:8001::186
 neubot.mlab.iad02                 IN  AAAA	2001:550:200:7::147
 neubot.mlab.mlab1.iad02           IN  AAAA	2001:550:200:7::147
 neubot.mlab.iad02                 IN  AAAA	2001:550:200:7::160
@@ -23609,6 +23658,8 @@ neubot.mlabv6.iad01               IN  AAAA	2610:18:111:8001::160
 neubot.mlab.mlab2v6.iad01         IN  AAAA	2610:18:111:8001::160
 neubot.mlabv6.iad01               IN  AAAA	2610:18:111:8001::173
 neubot.mlab.mlab3v6.iad01         IN  AAAA	2610:18:111:8001::173
+neubot.mlabv6.iad01               IN  AAAA	2610:18:111:8001::186
+neubot.mlab.mlab4v6.iad01         IN  AAAA	2610:18:111:8001::186
 neubot.mlabv6.iad02               IN  AAAA	2001:550:200:7::147
 neubot.mlab.mlab1v6.iad02         IN  AAAA	2001:550:200:7::147
 neubot.mlabv6.iad02               IN  AAAA	2001:550:200:7::160
@@ -24529,6 +24580,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.iad01            IN  A   	216.156.197.161
 1.michigan.iad01                  IN  A   	216.156.197.174
 1.michigan.mlab3.iad01            IN  A   	216.156.197.174
+1.michigan.iad01                  IN  A   	216.156.197.187
+1.michigan.mlab4.iad01            IN  A   	216.156.197.187
 1.michigan.iad02                  IN  A   	38.90.140.148
 1.michigan.mlab1.iad02            IN  A   	38.90.140.148
 1.michigan.iad02                  IN  A   	38.90.140.161
@@ -25473,6 +25526,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v4.iad01          IN  A   	216.156.197.161
 1.michiganv4.iad01                IN  A   	216.156.197.174
 1.michigan.mlab3v4.iad01          IN  A   	216.156.197.174
+1.michiganv4.iad01                IN  A   	216.156.197.187
+1.michigan.mlab4v4.iad01          IN  A   	216.156.197.187
 1.michiganv4.iad02                IN  A   	38.90.140.148
 1.michigan.mlab1v4.iad02          IN  A   	38.90.140.148
 1.michiganv4.iad02                IN  A   	38.90.140.161
@@ -26405,6 +26460,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.iad01            IN  AAAA	2610:18:111:8001::161
 1.michigan.iad01                  IN  AAAA	2610:18:111:8001::174
 1.michigan.mlab3.iad01            IN  AAAA	2610:18:111:8001::174
+1.michigan.iad01                  IN  AAAA	2610:18:111:8001::187
+1.michigan.mlab4.iad01            IN  AAAA	2610:18:111:8001::187
 1.michigan.iad02                  IN  AAAA	2001:550:200:7::148
 1.michigan.mlab1.iad02            IN  AAAA	2001:550:200:7::148
 1.michigan.iad02                  IN  AAAA	2001:550:200:7::161
@@ -27313,6 +27370,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v6.iad01          IN  AAAA	2610:18:111:8001::161
 1.michiganv6.iad01                IN  AAAA	2610:18:111:8001::174
 1.michigan.mlab3v6.iad01          IN  AAAA	2610:18:111:8001::174
+1.michiganv6.iad01                IN  AAAA	2610:18:111:8001::187
+1.michigan.mlab4v6.iad01          IN  AAAA	2610:18:111:8001::187
 1.michiganv6.iad02                IN  AAAA	2001:550:200:7::148
 1.michigan.mlab1v6.iad02          IN  AAAA	2001:550:200:7::148
 1.michiganv6.iad02                IN  AAAA	2001:550:200:7::161
@@ -28233,6 +28292,8 @@ utility.mlab.iad01                IN  A   	216.156.197.162
 utility.mlab.mlab2.iad01          IN  A   	216.156.197.162
 utility.mlab.iad01                IN  A   	216.156.197.175
 utility.mlab.mlab3.iad01          IN  A   	216.156.197.175
+utility.mlab.iad01                IN  A   	216.156.197.188
+utility.mlab.mlab4.iad01          IN  A   	216.156.197.188
 utility.mlab.iad02                IN  A   	38.90.140.149
 utility.mlab.mlab1.iad02          IN  A   	38.90.140.149
 utility.mlab.iad02                IN  A   	38.90.140.162
@@ -29177,6 +29238,8 @@ utility.mlabv4.iad01              IN  A   	216.156.197.162
 utility.mlab.mlab2v4.iad01        IN  A   	216.156.197.162
 utility.mlabv4.iad01              IN  A   	216.156.197.175
 utility.mlab.mlab3v4.iad01        IN  A   	216.156.197.175
+utility.mlabv4.iad01              IN  A   	216.156.197.188
+utility.mlab.mlab4v4.iad01        IN  A   	216.156.197.188
 utility.mlabv4.iad02              IN  A   	38.90.140.149
 utility.mlab.mlab1v4.iad02        IN  A   	38.90.140.149
 utility.mlabv4.iad02              IN  A   	38.90.140.162
@@ -30109,6 +30172,8 @@ utility.mlab.iad01                IN  AAAA	2610:18:111:8001::162
 utility.mlab.mlab2.iad01          IN  AAAA	2610:18:111:8001::162
 utility.mlab.iad01                IN  AAAA	2610:18:111:8001::175
 utility.mlab.mlab3.iad01          IN  AAAA	2610:18:111:8001::175
+utility.mlab.iad01                IN  AAAA	2610:18:111:8001::188
+utility.mlab.mlab4.iad01          IN  AAAA	2610:18:111:8001::188
 utility.mlab.iad02                IN  AAAA	2001:550:200:7::149
 utility.mlab.mlab1.iad02          IN  AAAA	2001:550:200:7::149
 utility.mlab.iad02                IN  AAAA	2001:550:200:7::162
@@ -31017,6 +31082,8 @@ utility.mlabv6.iad01              IN  AAAA	2610:18:111:8001::162
 utility.mlab.mlab2v6.iad01        IN  AAAA	2610:18:111:8001::162
 utility.mlabv6.iad01              IN  AAAA	2610:18:111:8001::175
 utility.mlab.mlab3v6.iad01        IN  AAAA	2610:18:111:8001::175
+utility.mlabv6.iad01              IN  AAAA	2610:18:111:8001::188
+utility.mlab.mlab4v6.iad01        IN  AAAA	2610:18:111:8001::188
 utility.mlabv6.iad02              IN  AAAA	2001:550:200:7::149
 utility.mlab.mlab1v6.iad02        IN  AAAA	2001:550:200:7::149
 utility.mlabv6.iad02              IN  AAAA	2001:550:200:7::162
