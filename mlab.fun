@@ -8,20 +8,20 @@ $TTL 600
     1w         ;expire
     1h )       ;minimum
 
-@           IN  NS          sns-pb.isc.org.
-@           IN  NS          ns-mlab.greenhost.net.
+@                 IN  NS    sns-pb.isc.org.
+@                 IN  NS    ns-mlab.greenhost.net.
 
-sandbox     IN  NS  21600   ns-cloud-b1.googledomains.com.
-            IN  NS  21600   ns-cloud-b2.googledomains.com.
-            IN  NS  21600   ns-cloud-b3.googledomains.com.
-            IN  NS  21600   ns-cloud-b4.googledomains.com.
+sandbox     21600 IN  NS    ns-cloud-b1.googledomains.com.
+            21600 IN  NS    ns-cloud-b2.googledomains.com.
+            21600 IN  NS    ns-cloud-b3.googledomains.com.
+            21600 IN  NS    ns-cloud-b4.googledomains.com.
 
-staging     IN  NS  21600   ns-cloud-b1.googledomains.com.
-            IN  NS  21600   ns-cloud-b2.googledomains.com.
-            IN  NS  21600   ns-cloud-b3.googledomains.com.
-            IN  NS  21600   ns-cloud-b4.googledomains.com.
+staging     21600 IN  NS    ns-cloud-b1.googledomains.com.
+            21600 IN  NS    ns-cloud-b2.googledomains.com.
+            21600 IN  NS    ns-cloud-b3.googledomains.com.
+            21600 IN  NS    ns-cloud-b4.googledomains.com.
 
-oti         IN  NS  21600   ns-cloud-a1.googledomains.com.
-            IN  NS  21600   ns-cloud-a2.googledomains.com.
-            IN  NS  21600   ns-cloud-a3.googledomains.com.
-            IN  NS  21600   ns-cloud-a4.googledomains.com.
+oti         21600 IN  NS    ns-cloud-a1.googledomains.com.
+            21600 IN  NS    ns-cloud-a2.googledomains.com.
+            21600 IN  NS    ns-cloud-a3.googledomains.com.
+            21600 IN  NS    ns-cloud-a4.googledomains.com.
