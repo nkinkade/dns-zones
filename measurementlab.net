@@ -3,7 +3,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2017071000 ;Serial Number
+    2017092100 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -109,3 +109,24 @@ localhost    IN    A    127.0.0.1
 ; ePoxy service (testing).
 ;
 epoxy-test-1 IN    A    104.196.111.80
+
+;
+; Subdomains deleted to Google Cloud DNS
+;
+; Delegated to mlab-sandbox GCP project
+sandbox    21600    IN    NS    ns-cloud-e1.googledomains.com.
+                                ns-cloud-e2.googledomains.com.
+                                ns-cloud-e3.googledomains.com.
+                                ns-cloud-e4.googledomains.com.
+
+; Delegated to mlab-staging GCP project
+staging    21600    IN    NS    ns-cloud-b1.googledomains.com.
+                                ns-cloud-b2.googledomains.com.
+                                ns-cloud-b3.googledomains.com.
+                                ns-cloud-b4.googledomains.com.
+
+; Delegated to mlab-oti GCP project
+oti        21600    IN    NS    ns-cloud-e1.googledomains.com.
+                                ns-cloud-e2.googledomains.com.
+                                ns-cloud-e3.googledomains.com.
+                                ns-cloud-e4.googledomains.com.
