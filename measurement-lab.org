@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2017092200      ; Serial
+        2017101200      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire
@@ -43,33 +43,33 @@ donar   IN      NS      utility.mlab.mlab1.hnd01.measurement-lab.org.
 ;
 ; hosts v4
 mlab1.tyo01                       IN  A         35.200.102.226
-mlab1.tyo02                       IN  A         35.200.32.43
+mlab1.tyo02                       IN  A         35.200.34.149
 mlab1.tyo03                       IN  A         35.200.112.17
 
 ; hosts v4 decorated
 mlab1v4.tyo01                     IN  A         35.200.102.226
-mlab1v4.tyo02                     IN  A         35.200.32.43
+mlab1v4.tyo02                     IN  A         35.200.34.149
 mlab1v4.tyo03                     IN  A         35.200.112.17
 
 ; ndt.iupui v4
 ndt.iupui.tyo01                   IN  A         35.200.102.226
 ndt.iupui.mlab1.tyo01             IN  A         35.200.102.226
-ndt.iupui.tyo02                   IN  A         35.200.32.43
-ndt.iupui.mlab1.tyo02             IN  A         35.200.32.43
+ndt.iupui.tyo02                   IN  A         35.200.34.149
+ndt.iupui.mlab1.tyo02             IN  A         35.200.34.149
 ndt.iupui.tyo03                   IN  A         35.200.112.17
 ndt.iupui.mlab1.tyo03             IN  A         35.200.112.17
 
 ; ndt.iupui v4 decorated
 ndt.iupuiv4.tyo01                 IN  A         35.200.102.226
 ndt.iupui.mlab1v4.tyo01           IN  A         35.200.102.226
-ndt.iupuiv4.tyo02                 IN  A         35.200.32.43
-ndt.iupui.mlab1v4.tyo02           IN  A         35.200.32.43
+ndt.iupuiv4.tyo02                 IN  A         35.200.34.149
+ndt.iupui.mlab1v4.tyo02           IN  A         35.200.34.149
 ndt.iupuiv4.tyo03                 IN  A         35.200.112.17
 ndt.iupui.mlab1v4.tyo03           IN  A         35.200.112.17
 
 ; ndt.iupui v4 flattened
 ndt-iupui-mlab1-tyo01             IN  A         35.200.102.226
-ndt-iupui-mlab1-tyo02             IN  A         35.200.32.43
+ndt-iupui-mlab1-tyo02             IN  A         35.200.34.149
 ndt-iupui-mlab1-tyo03             IN  A         35.200.112.17
 
 ; ndt.iupui v4 decorated flattened
@@ -635,6 +635,7 @@ mlab4d.mad04                      IN  A   	77.67.115.71
 mlab1d.mia01                      IN  A   	4.71.210.196
 mlab2d.mia01                      IN  A   	4.71.210.197
 mlab3d.mia01                      IN  A   	4.71.210.198
+mlab4d.mia01                      IN  A   	4.71.210.199
 mlab1d.mia02                      IN  A   	38.109.21.4
 mlab2d.mia02                      IN  A   	38.109.21.5
 mlab3d.mia02                      IN  A   	38.109.21.6
@@ -1144,6 +1145,7 @@ mlab4.mad04                       IN  A   	77.67.115.112
 mlab1.mia01                       IN  A   	4.71.210.201
 mlab2.mia01                       IN  A   	4.71.210.214
 mlab3.mia01                       IN  A   	4.71.210.227
+mlab4.mia01                       IN  A   	4.71.210.240
 mlab1.mia02                       IN  A   	38.109.21.9
 mlab2.mia02                       IN  A   	38.109.21.22
 mlab3.mia02                       IN  A   	38.109.21.35
@@ -1653,6 +1655,7 @@ mlab4v4.mad04                     IN  A   	77.67.115.112
 mlab1v4.mia01                     IN  A   	4.71.210.201
 mlab2v4.mia01                     IN  A   	4.71.210.214
 mlab3v4.mia01                     IN  A   	4.71.210.227
+mlab4v4.mia01                     IN  A   	4.71.210.240
 mlab1v4.mia02                     IN  A   	38.109.21.9
 mlab2v4.mia02                     IN  A   	38.109.21.22
 mlab3v4.mia02                     IN  A   	38.109.21.35
@@ -2150,6 +2153,7 @@ mlab4.mad04                       IN  AAAA	2001:668:1f:63::112
 mlab1.mia01                       IN  AAAA	2001:1900:3001:a::201
 mlab2.mia01                       IN  AAAA	2001:1900:3001:a::214
 mlab3.mia01                       IN  AAAA	2001:1900:3001:a::227
+mlab4.mia01                       IN  AAAA	2001:1900:3001:a::240
 mlab1.mia02                       IN  AAAA	2001:550:6c01::9
 mlab2.mia02                       IN  AAAA	2001:550:6c01::22
 mlab3.mia02                       IN  AAAA	2001:550:6c01::35
@@ -2641,6 +2645,7 @@ mlab4v6.mad04                     IN  AAAA	2001:668:1f:63::112
 mlab1v6.mia01                     IN  AAAA	2001:1900:3001:a::201
 mlab2v6.mia01                     IN  AAAA	2001:1900:3001:a::214
 mlab3v6.mia01                     IN  AAAA	2001:1900:3001:a::227
+mlab4v6.mia01                     IN  AAAA	2001:1900:3001:a::240
 mlab1v6.mia02                     IN  AAAA	2001:550:6c01::9
 mlab2v6.mia02                     IN  AAAA	2001:550:6c01::22
 mlab3v6.mia02                     IN  AAAA	2001:550:6c01::35
@@ -3424,6 +3429,8 @@ ndt.iupui.mia01                   IN  A   	4.71.210.224
 ndt.iupui.mlab2.mia01             IN  A   	4.71.210.224
 ndt.iupui.mia01                   IN  A   	4.71.210.237
 ndt.iupui.mlab3.mia01             IN  A   	4.71.210.237
+ndt.iupui.mia01                   IN  A   	4.71.210.242
+ndt.iupui.mlab4.mia01             IN  A   	4.71.210.242
 ndt.iupui.mia02                   IN  A   	38.109.21.11
 ndt.iupui.mlab1.mia02             IN  A   	38.109.21.11
 ndt.iupui.mia02                   IN  A   	38.109.21.24
@@ -4440,6 +4447,8 @@ ndt.iupuiv4.mia01                 IN  A   	4.71.210.224
 ndt.iupui.mlab2v4.mia01           IN  A   	4.71.210.224
 ndt.iupuiv4.mia01                 IN  A   	4.71.210.237
 ndt.iupui.mlab3v4.mia01           IN  A   	4.71.210.237
+ndt.iupuiv4.mia01                 IN  A   	4.71.210.242
+ndt.iupui.mlab4v4.mia01           IN  A   	4.71.210.242
 ndt.iupuiv4.mia02                 IN  A   	38.109.21.11
 ndt.iupui.mlab1v4.mia02           IN  A   	38.109.21.11
 ndt.iupuiv4.mia02                 IN  A   	38.109.21.24
@@ -5260,6 +5269,7 @@ ndt-iupui-mlab4-mad04             IN  A   	77.67.115.114
 ndt-iupui-mlab1-mia01             IN  A   	4.71.210.211
 ndt-iupui-mlab2-mia01             IN  A   	4.71.210.224
 ndt-iupui-mlab3-mia01             IN  A   	4.71.210.237
+ndt-iupui-mlab4-mia01             IN  A   	4.71.210.242
 ndt-iupui-mlab1-mia02             IN  A   	38.109.21.11
 ndt-iupui-mlab2-mia02             IN  A   	38.109.21.24
 ndt-iupui-mlab3-mia02             IN  A   	38.109.21.37
@@ -5769,6 +5779,7 @@ ndt-iupui-mlab4v4-mad04           IN  A   	77.67.115.114
 ndt-iupui-mlab1v4-mia01           IN  A   	4.71.210.211
 ndt-iupui-mlab2v4-mia01           IN  A   	4.71.210.224
 ndt-iupui-mlab3v4-mia01           IN  A   	4.71.210.237
+ndt-iupui-mlab4v4-mia01           IN  A   	4.71.210.242
 ndt-iupui-mlab1v4-mia02           IN  A   	38.109.21.11
 ndt-iupui-mlab2v4-mia02           IN  A   	38.109.21.24
 ndt-iupui-mlab3v4-mia02           IN  A   	38.109.21.37
@@ -6602,6 +6613,8 @@ npad.iupui.mia01                  IN  A   	4.71.210.215
 npad.iupui.mlab2.mia01            IN  A   	4.71.210.215
 npad.iupui.mia01                  IN  A   	4.71.210.228
 npad.iupui.mlab3.mia01            IN  A   	4.71.210.228
+npad.iupui.mia01                  IN  A   	4.71.210.243
+npad.iupui.mlab4.mia01            IN  A   	4.71.210.243
 npad.iupui.mia02                  IN  A   	38.109.21.12
 npad.iupui.mlab1.mia02            IN  A   	38.109.21.12
 npad.iupui.mia02                  IN  A   	38.109.21.25
@@ -7618,6 +7631,8 @@ npad.iupuiv4.mia01                IN  A   	4.71.210.215
 npad.iupui.mlab2v4.mia01          IN  A   	4.71.210.215
 npad.iupuiv4.mia01                IN  A   	4.71.210.228
 npad.iupui.mlab3v4.mia01          IN  A   	4.71.210.228
+npad.iupuiv4.mia01                IN  A   	4.71.210.243
+npad.iupui.mlab4v4.mia01          IN  A   	4.71.210.243
 npad.iupuiv4.mia02                IN  A   	38.109.21.12
 npad.iupui.mlab1v4.mia02          IN  A   	38.109.21.12
 npad.iupuiv4.mia02                IN  A   	38.109.21.25
@@ -8610,6 +8625,8 @@ npad.iupui.mia01                  IN  AAAA	2001:1900:3001:a::215
 npad.iupui.mlab2.mia01            IN  AAAA	2001:1900:3001:a::215
 npad.iupui.mia01                  IN  AAAA	2001:1900:3001:a::228
 npad.iupui.mlab3.mia01            IN  AAAA	2001:1900:3001:a::228
+npad.iupui.mia01                  IN  AAAA	2001:1900:3001:a::243
+npad.iupui.mlab4.mia01            IN  AAAA	2001:1900:3001:a::243
 npad.iupui.mia02                  IN  AAAA	2001:550:6c01::12
 npad.iupui.mlab1.mia02            IN  AAAA	2001:550:6c01::12
 npad.iupui.mia02                  IN  AAAA	2001:550:6c01::25
@@ -9590,6 +9607,8 @@ npad.iupuiv6.mia01                IN  AAAA	2001:1900:3001:a::215
 npad.iupui.mlab2v6.mia01          IN  AAAA	2001:1900:3001:a::215
 npad.iupuiv6.mia01                IN  AAAA	2001:1900:3001:a::228
 npad.iupui.mlab3v6.mia01          IN  AAAA	2001:1900:3001:a::228
+npad.iupuiv6.mia01                IN  AAAA	2001:1900:3001:a::243
+npad.iupui.mlab4v6.mia01          IN  AAAA	2001:1900:3001:a::243
 npad.iupuiv6.mia02                IN  AAAA	2001:550:6c01::12
 npad.iupui.mlab1v6.mia02          IN  AAAA	2001:550:6c01::12
 npad.iupuiv6.mia02                IN  AAAA	2001:550:6c01::25
@@ -10594,6 +10613,8 @@ geoloc4.uw.mia01                  IN  A   	4.71.210.218
 geoloc4.uw.mlab2.mia01            IN  A   	4.71.210.218
 geoloc4.uw.mia01                  IN  A   	4.71.210.231
 geoloc4.uw.mlab3.mia01            IN  A   	4.71.210.231
+geoloc4.uw.mia01                  IN  A   	4.71.210.246
+geoloc4.uw.mlab4.mia01            IN  A   	4.71.210.246
 geoloc4.uw.mia02                  IN  A   	38.109.21.15
 geoloc4.uw.mlab1.mia02            IN  A   	38.109.21.15
 geoloc4.uw.mia02                  IN  A   	38.109.21.28
@@ -11610,6 +11631,8 @@ geoloc4.uwv4.mia01                IN  A   	4.71.210.218
 geoloc4.uw.mlab2v4.mia01          IN  A   	4.71.210.218
 geoloc4.uwv4.mia01                IN  A   	4.71.210.231
 geoloc4.uw.mlab3v4.mia01          IN  A   	4.71.210.231
+geoloc4.uwv4.mia01                IN  A   	4.71.210.246
+geoloc4.uw.mlab4v4.mia01          IN  A   	4.71.210.246
 geoloc4.uwv4.mia02                IN  A   	38.109.21.15
 geoloc4.uw.mlab1v4.mia02          IN  A   	38.109.21.15
 geoloc4.uwv4.mia02                IN  A   	38.109.21.28
@@ -12662,6 +12685,8 @@ ooni.mlab.mia01                   IN  A   	4.71.210.220
 ooni.mlab.mlab2.mia01             IN  A   	4.71.210.220
 ooni.mlab.mia01                   IN  A   	4.71.210.233
 ooni.mlab.mlab3.mia01             IN  A   	4.71.210.233
+ooni.mlab.mia01                   IN  A   	4.71.210.247
+ooni.mlab.mlab4.mia01             IN  A   	4.71.210.247
 ooni.mlab.mia02                   IN  A   	38.109.21.16
 ooni.mlab.mlab1.mia02             IN  A   	38.109.21.16
 ooni.mlab.mia02                   IN  A   	38.109.21.29
@@ -13678,6 +13703,8 @@ ooni.mlabv4.mia01                 IN  A   	4.71.210.220
 ooni.mlab.mlab2v4.mia01           IN  A   	4.71.210.220
 ooni.mlabv4.mia01                 IN  A   	4.71.210.233
 ooni.mlab.mlab3v4.mia01           IN  A   	4.71.210.233
+ooni.mlabv4.mia01                 IN  A   	4.71.210.247
+ooni.mlab.mlab4v4.mia01           IN  A   	4.71.210.247
 ooni.mlabv4.mia02                 IN  A   	38.109.21.16
 ooni.mlab.mlab1v4.mia02           IN  A   	38.109.21.16
 ooni.mlabv4.mia02                 IN  A   	38.109.21.29
@@ -14670,6 +14697,8 @@ ooni.mlab.mia01                   IN  AAAA	2001:1900:3001:a::220
 ooni.mlab.mlab2.mia01             IN  AAAA	2001:1900:3001:a::220
 ooni.mlab.mia01                   IN  AAAA	2001:1900:3001:a::233
 ooni.mlab.mlab3.mia01             IN  AAAA	2001:1900:3001:a::233
+ooni.mlab.mia01                   IN  AAAA	2001:1900:3001:a::247
+ooni.mlab.mlab4.mia01             IN  AAAA	2001:1900:3001:a::247
 ooni.mlab.mia02                   IN  AAAA	2001:550:6c01::16
 ooni.mlab.mlab1.mia02             IN  AAAA	2001:550:6c01::16
 ooni.mlab.mia02                   IN  AAAA	2001:550:6c01::29
@@ -15650,6 +15679,8 @@ ooni.mlabv6.mia01                 IN  AAAA	2001:1900:3001:a::220
 ooni.mlab.mlab2v6.mia01           IN  AAAA	2001:1900:3001:a::220
 ooni.mlabv6.mia01                 IN  AAAA	2001:1900:3001:a::233
 ooni.mlab.mlab3v6.mia01           IN  AAAA	2001:1900:3001:a::233
+ooni.mlabv6.mia01                 IN  AAAA	2001:1900:3001:a::247
+ooni.mlab.mlab4v6.mia01           IN  AAAA	2001:1900:3001:a::247
 ooni.mlabv6.mia02                 IN  AAAA	2001:550:6c01::16
 ooni.mlab.mlab1v6.mia02           IN  AAAA	2001:550:6c01::16
 ooni.mlabv6.mia02                 IN  AAAA	2001:550:6c01::29
@@ -16654,6 +16685,8 @@ ispmon.samknows.mia01             IN  A   	4.71.210.225
 ispmon.samknows.mlab2.mia01       IN  A   	4.71.210.225
 ispmon.samknows.mia01             IN  A   	4.71.210.238
 ispmon.samknows.mlab3.mia01       IN  A   	4.71.210.238
+ispmon.samknows.mia01             IN  A   	4.71.210.248
+ispmon.samknows.mlab4.mia01       IN  A   	4.71.210.248
 ispmon.samknows.mia02             IN  A   	38.109.21.17
 ispmon.samknows.mlab1.mia02       IN  A   	38.109.21.17
 ispmon.samknows.mia02             IN  A   	38.109.21.30
@@ -17670,6 +17703,8 @@ ispmon.samknowsv4.mia01           IN  A   	4.71.210.225
 ispmon.samknows.mlab2v4.mia01     IN  A   	4.71.210.225
 ispmon.samknowsv4.mia01           IN  A   	4.71.210.238
 ispmon.samknows.mlab3v4.mia01     IN  A   	4.71.210.238
+ispmon.samknowsv4.mia01           IN  A   	4.71.210.248
+ispmon.samknows.mlab4v4.mia01     IN  A   	4.71.210.248
 ispmon.samknowsv4.mia02           IN  A   	38.109.21.17
 ispmon.samknows.mlab1v4.mia02     IN  A   	38.109.21.17
 ispmon.samknowsv4.mia02           IN  A   	38.109.21.30
@@ -18662,6 +18697,8 @@ ispmon.samknows.mia01             IN  AAAA	2001:1900:3001:a::225
 ispmon.samknows.mlab2.mia01       IN  AAAA	2001:1900:3001:a::225
 ispmon.samknows.mia01             IN  AAAA	2001:1900:3001:a::238
 ispmon.samknows.mlab3.mia01       IN  AAAA	2001:1900:3001:a::238
+ispmon.samknows.mia01             IN  AAAA	2001:1900:3001:a::248
+ispmon.samknows.mlab4.mia01       IN  AAAA	2001:1900:3001:a::248
 ispmon.samknows.mia02             IN  AAAA	2001:550:6c01::17
 ispmon.samknows.mlab1.mia02       IN  AAAA	2001:550:6c01::17
 ispmon.samknows.mia02             IN  AAAA	2001:550:6c01::30
@@ -19642,6 +19679,8 @@ ispmon.samknowsv6.mia01           IN  AAAA	2001:1900:3001:a::225
 ispmon.samknows.mlab2v6.mia01     IN  AAAA	2001:1900:3001:a::225
 ispmon.samknowsv6.mia01           IN  AAAA	2001:1900:3001:a::238
 ispmon.samknows.mlab3v6.mia01     IN  AAAA	2001:1900:3001:a::238
+ispmon.samknowsv6.mia01           IN  AAAA	2001:1900:3001:a::248
+ispmon.samknows.mlab4v6.mia01     IN  AAAA	2001:1900:3001:a::248
 ispmon.samknowsv6.mia02           IN  AAAA	2001:550:6c01::17
 ispmon.samknows.mlab1v6.mia02     IN  AAAA	2001:550:6c01::17
 ispmon.samknowsv6.mia02           IN  AAAA	2001:550:6c01::30
@@ -20646,6 +20685,8 @@ bismark.gt.mia01                  IN  A   	4.71.210.217
 bismark.gt.mlab2.mia01            IN  A   	4.71.210.217
 bismark.gt.mia01                  IN  A   	4.71.210.230
 bismark.gt.mlab3.mia01            IN  A   	4.71.210.230
+bismark.gt.mia01                  IN  A   	4.71.210.249
+bismark.gt.mlab4.mia01            IN  A   	4.71.210.249
 bismark.gt.mia02                  IN  A   	38.109.21.18
 bismark.gt.mlab1.mia02            IN  A   	38.109.21.18
 bismark.gt.mia02                  IN  A   	38.109.21.31
@@ -21662,6 +21703,8 @@ bismark.gtv4.mia01                IN  A   	4.71.210.217
 bismark.gt.mlab2v4.mia01          IN  A   	4.71.210.217
 bismark.gtv4.mia01                IN  A   	4.71.210.230
 bismark.gt.mlab3v4.mia01          IN  A   	4.71.210.230
+bismark.gtv4.mia01                IN  A   	4.71.210.249
+bismark.gt.mlab4v4.mia01          IN  A   	4.71.210.249
 bismark.gtv4.mia02                IN  A   	38.109.21.18
 bismark.gt.mlab1v4.mia02          IN  A   	38.109.21.18
 bismark.gtv4.mia02                IN  A   	38.109.21.31
@@ -22698,6 +22741,8 @@ neubot.mlab.mia01                 IN  A   	4.71.210.223
 neubot.mlab.mlab2.mia01           IN  A   	4.71.210.223
 neubot.mlab.mia01                 IN  A   	4.71.210.236
 neubot.mlab.mlab3.mia01           IN  A   	4.71.210.236
+neubot.mlab.mia01                 IN  A   	4.71.210.250
+neubot.mlab.mlab4.mia01           IN  A   	4.71.210.250
 neubot.mlab.mia02                 IN  A   	38.109.21.19
 neubot.mlab.mlab1.mia02           IN  A   	38.109.21.19
 neubot.mlab.mia02                 IN  A   	38.109.21.32
@@ -23714,6 +23759,8 @@ neubot.mlabv4.mia01               IN  A   	4.71.210.223
 neubot.mlab.mlab2v4.mia01         IN  A   	4.71.210.223
 neubot.mlabv4.mia01               IN  A   	4.71.210.236
 neubot.mlab.mlab3v4.mia01         IN  A   	4.71.210.236
+neubot.mlabv4.mia01               IN  A   	4.71.210.250
+neubot.mlab.mlab4v4.mia01         IN  A   	4.71.210.250
 neubot.mlabv4.mia02               IN  A   	38.109.21.19
 neubot.mlab.mlab1v4.mia02         IN  A   	38.109.21.19
 neubot.mlabv4.mia02               IN  A   	38.109.21.32
@@ -24706,6 +24753,8 @@ neubot.mlab.mia01                 IN  AAAA	2001:1900:3001:a::223
 neubot.mlab.mlab2.mia01           IN  AAAA	2001:1900:3001:a::223
 neubot.mlab.mia01                 IN  AAAA	2001:1900:3001:a::236
 neubot.mlab.mlab3.mia01           IN  AAAA	2001:1900:3001:a::236
+neubot.mlab.mia01                 IN  AAAA	2001:1900:3001:a::250
+neubot.mlab.mlab4.mia01           IN  AAAA	2001:1900:3001:a::250
 neubot.mlab.mia02                 IN  AAAA	2001:550:6c01::19
 neubot.mlab.mlab1.mia02           IN  AAAA	2001:550:6c01::19
 neubot.mlab.mia02                 IN  AAAA	2001:550:6c01::32
@@ -25686,6 +25735,8 @@ neubot.mlabv6.mia01               IN  AAAA	2001:1900:3001:a::223
 neubot.mlab.mlab2v6.mia01         IN  AAAA	2001:1900:3001:a::223
 neubot.mlabv6.mia01               IN  AAAA	2001:1900:3001:a::236
 neubot.mlab.mlab3v6.mia01         IN  AAAA	2001:1900:3001:a::236
+neubot.mlabv6.mia01               IN  AAAA	2001:1900:3001:a::250
+neubot.mlab.mlab4v6.mia01         IN  AAAA	2001:1900:3001:a::250
 neubot.mlabv6.mia02               IN  AAAA	2001:550:6c01::19
 neubot.mlab.mlab1v6.mia02         IN  AAAA	2001:550:6c01::19
 neubot.mlabv6.mia02               IN  AAAA	2001:550:6c01::32
@@ -26690,6 +26741,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.mia01            IN  A   	4.71.210.216
 1.michigan.mia01                  IN  A   	4.71.210.229
 1.michigan.mlab3.mia01            IN  A   	4.71.210.229
+1.michigan.mia01                  IN  A   	4.71.210.251
+1.michigan.mlab4.mia01            IN  A   	4.71.210.251
 1.michigan.mia02                  IN  A   	38.109.21.20
 1.michigan.mlab1.mia02            IN  A   	38.109.21.20
 1.michigan.mia02                  IN  A   	38.109.21.33
@@ -27706,6 +27759,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v4.mia01          IN  A   	4.71.210.216
 1.michiganv4.mia01                IN  A   	4.71.210.229
 1.michigan.mlab3v4.mia01          IN  A   	4.71.210.229
+1.michiganv4.mia01                IN  A   	4.71.210.251
+1.michigan.mlab4v4.mia01          IN  A   	4.71.210.251
 1.michiganv4.mia02                IN  A   	38.109.21.20
 1.michigan.mlab1v4.mia02          IN  A   	38.109.21.20
 1.michiganv4.mia02                IN  A   	38.109.21.33
@@ -28698,6 +28753,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.mia01            IN  AAAA	2001:1900:3001:a::216
 1.michigan.mia01                  IN  AAAA	2001:1900:3001:a::229
 1.michigan.mlab3.mia01            IN  AAAA	2001:1900:3001:a::229
+1.michigan.mia01                  IN  AAAA	2001:1900:3001:a::251
+1.michigan.mlab4.mia01            IN  AAAA	2001:1900:3001:a::251
 1.michigan.mia02                  IN  AAAA	2001:550:6c01::20
 1.michigan.mlab1.mia02            IN  AAAA	2001:550:6c01::20
 1.michigan.mia02                  IN  AAAA	2001:550:6c01::33
@@ -29678,6 +29735,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v6.mia01          IN  AAAA	2001:1900:3001:a::216
 1.michiganv6.mia01                IN  AAAA	2001:1900:3001:a::229
 1.michigan.mlab3v6.mia01          IN  AAAA	2001:1900:3001:a::229
+1.michiganv6.mia01                IN  AAAA	2001:1900:3001:a::251
+1.michigan.mlab4v6.mia01          IN  AAAA	2001:1900:3001:a::251
 1.michiganv6.mia02                IN  AAAA	2001:550:6c01::20
 1.michigan.mlab1v6.mia02          IN  AAAA	2001:550:6c01::20
 1.michiganv6.mia02                IN  AAAA	2001:550:6c01::33
@@ -30682,6 +30741,8 @@ utility.mlab.mia01                IN  A   	4.71.210.219
 utility.mlab.mlab2.mia01          IN  A   	4.71.210.219
 utility.mlab.mia01                IN  A   	4.71.210.232
 utility.mlab.mlab3.mia01          IN  A   	4.71.210.232
+utility.mlab.mia01                IN  A   	4.71.210.252
+utility.mlab.mlab4.mia01          IN  A   	4.71.210.252
 utility.mlab.mia02                IN  A   	38.109.21.21
 utility.mlab.mlab1.mia02          IN  A   	38.109.21.21
 utility.mlab.mia02                IN  A   	38.109.21.34
@@ -31698,6 +31759,8 @@ utility.mlabv4.mia01              IN  A   	4.71.210.219
 utility.mlab.mlab2v4.mia01        IN  A   	4.71.210.219
 utility.mlabv4.mia01              IN  A   	4.71.210.232
 utility.mlab.mlab3v4.mia01        IN  A   	4.71.210.232
+utility.mlabv4.mia01              IN  A   	4.71.210.252
+utility.mlab.mlab4v4.mia01        IN  A   	4.71.210.252
 utility.mlabv4.mia02              IN  A   	38.109.21.21
 utility.mlab.mlab1v4.mia02        IN  A   	38.109.21.21
 utility.mlabv4.mia02              IN  A   	38.109.21.34
@@ -32690,6 +32753,8 @@ utility.mlab.mia01                IN  AAAA	2001:1900:3001:a::219
 utility.mlab.mlab2.mia01          IN  AAAA	2001:1900:3001:a::219
 utility.mlab.mia01                IN  AAAA	2001:1900:3001:a::232
 utility.mlab.mlab3.mia01          IN  AAAA	2001:1900:3001:a::232
+utility.mlab.mia01                IN  AAAA	2001:1900:3001:a::252
+utility.mlab.mlab4.mia01          IN  AAAA	2001:1900:3001:a::252
 utility.mlab.mia02                IN  AAAA	2001:550:6c01::21
 utility.mlab.mlab1.mia02          IN  AAAA	2001:550:6c01::21
 utility.mlab.mia02                IN  AAAA	2001:550:6c01::34
@@ -33670,6 +33735,8 @@ utility.mlabv6.mia01              IN  AAAA	2001:1900:3001:a::219
 utility.mlab.mlab2v6.mia01        IN  AAAA	2001:1900:3001:a::219
 utility.mlabv6.mia01              IN  AAAA	2001:1900:3001:a::232
 utility.mlab.mlab3v6.mia01        IN  AAAA	2001:1900:3001:a::232
+utility.mlabv6.mia01              IN  AAAA	2001:1900:3001:a::252
+utility.mlab.mlab4v6.mia01        IN  AAAA	2001:1900:3001:a::252
 utility.mlabv6.mia02              IN  AAAA	2001:550:6c01::21
 utility.mlab.mlab1v6.mia02        IN  AAAA	2001:550:6c01::21
 utility.mlabv6.mia02              IN  AAAA	2001:550:6c01::34
