@@ -3,7 +3,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2017092101 ;Serial Number
+    2017101700 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -86,7 +86,7 @@ mlc2d        IN    A    23.228.128.69
 mlc2         IN    A    23.228.128.86
 
 boot-test2   IN    A    23.228.128.87
-mirror       IN    A    104.196.171.114
+mirror       IN    A    35.196.187.127
 wiki         IN    A    165.117.251.86
 monitor      IN    A    23.228.128.89
 vpn          IN    A    23.228.128.90
