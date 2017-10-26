@@ -3,7 +3,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2017101700 ;Serial Number
+    2017102500 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -119,14 +119,29 @@ sandbox    21600    IN    NS    ns-cloud-e1.googledomains.com.
            21600    IN    NS    ns-cloud-e3.googledomains.com.
            21600    IN    NS    ns-cloud-e4.googledomains.com.
 
+mlab-sandbox    21600    IN    NS    ns-cloud-e1.googledomains.com.
+                21600    IN    NS    ns-cloud-e2.googledomains.com.
+                21600    IN    NS    ns-cloud-e3.googledomains.com.
+                21600    IN    NS    ns-cloud-e4.googledomains.com.
+
 ; Delegated to mlab-staging GCP project
 staging    21600    IN    NS    ns-cloud-b1.googledomains.com.
            21600    IN    NS    ns-cloud-b2.googledomains.com.
            21600    IN    NS    ns-cloud-b3.googledomains.com.
            21600    IN    NS    ns-cloud-b4.googledomains.com.
 
+mlab-staging    21600    IN    NS    ns-cloud-e1.googledomains.com.
+                21600    IN    NS    ns-cloud-e2.googledomains.com.
+                21600    IN    NS    ns-cloud-e3.googledomains.com.
+                21600    IN    NS    ns-cloud-e4.googledomains.com.
+
 ; Delegated to mlab-oti GCP project
 oti        21600    IN    NS    ns-cloud-e1.googledomains.com.
            21600    IN    NS    ns-cloud-e2.googledomains.com.
            21600    IN    NS    ns-cloud-e3.googledomains.com.
            21600    IN    NS    ns-cloud-e4.googledomains.com.
+
+mlab-oti        21600    IN    NS    ns-cloud-d1.googledomains.com.
+                21600    IN    NS    ns-cloud-d2.googledomains.com.
+                21600    IN    NS    ns-cloud-d3.googledomains.com.
+                21600    IN    NS    ns-cloud-d4.googledomains.com.
