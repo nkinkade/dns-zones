@@ -97,11 +97,6 @@ ks           IN    TXT    "v=spf1 a -all"
 ks._domainkey.ks    IN    TXT    "v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqYy+nKUsFbI+7mw/eUandVL36luBfHTNdrH85QdKC7QpDV2syX+2Xe7TgnbJZA5NrveKeBzX47T0eM3agjBMDtEy8K4+SAyaMH69JxW9cJUC8tMUhvOCizWl2ySs+Kn3D63kyATXgSaZ2CK+cU4FbkxqEQpWz3tkpyAl1hextjwIDAQAB"
 ticket       IN    MX    10    ks.measurementlab.net.
 
-; allocated through GCP load balancer
-status-mlab-sandbox IN    A    35.184.166.181
-status-mlab-staging IN    A    35.185.76.159
-status-mlab-oti     IN    A    35.184.81.106
-
 ; for compatibility with measurementlab.net web host
 localhost    IN    A    127.0.0.1
 
